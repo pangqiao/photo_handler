@@ -3,4 +3,8 @@
 
 # 版本
 2020/10/25 v1.0  
-  -First release
+  -First release  
+
+2010/11/06 v.1.1  
+  -Support folder name with space.  
+  -support the file name with space.
