@@ -8,12 +8,13 @@
 202010   - 表示文件夹格式为年月。  
 选文件夹  - 选中需要归类的文件夹，其目录及子目录下的文件都会被分类。  
  
-选中默认的20201030，并点击“选文件夹”  
+选中默认的20201030，并点击“选文件夹”:  
 ![选文件夹](https://github.com/pangqiao/photo_handler/blob/main/images/select_the_folder.jpg)  
 选中文件夹并确认，会在选中文件夹同级目录创建一个output目录，归类好的文件都会被拷贝到这个output目录中去，原来的目录结构不会改变，文件也不会丢失。  
  
 这是之前的目录结构：  
 ![before](https://github.com/pangqiao/photo_handler/blob/main/images/folder_before.jpg)  
+  
 这是归类之后的目录结构:  
 ![after](https://github.com/pangqiao/photo_handler/blob/main/images/folder_after.jpg)
 
