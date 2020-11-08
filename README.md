@@ -9,5 +9,5 @@
 - Support folder name with space.  
 - support the file name with space.
 
-2010/11/06 - v2.0  
+2010/11/08 - v2.0  
 - Add UI.
