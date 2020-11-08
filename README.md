@@ -4,9 +4,9 @@
 # 使用方法
 界面很简单，两个单选框，加一个选文件夹的按钮。  
 ![UI](https://github.com/pangqiao/photo_handler/blob/main/images/main.jpg)  
-20201030 表示文件夹格式为年月日  
-202010   表示文件夹格式为年月  
-选文件夹 选中需要归类的文件夹，其目录及子目录下的文件都会被分类。  
+20201030 - 表示文件夹格式为年月日。  
+202010   - 表示文件夹格式为年月。  
+选文件夹  - 选中需要归类的文件夹，其目录及子目录下的文件都会被分类。  
  
 选中默认的20201030，并点击“选文件夹”  
 ![选文件夹](https://github.com/pangqiao/photo_handler/blob/main/images/select_the_folder.jpg)  
