@@ -51,7 +51,7 @@ class Panel(object):
             bg = Color().bg, fg = Color().fg, command = lambda:self.cmd_select_dir())
         self.Select_button.place(x = 165, y = 5, width = 90, height = 50)
 
-        # The button to select the folder type: year + month, or year + month + day.
+        # The radio button to select the folder type: year + month, or year + month + day.
         radio_info = [('20201030',  (float)(dir_format.MONTH_DAY), 0, 0),
             ('202010  ', (float)(dir_format.MONTH), 0, 30)]
 
