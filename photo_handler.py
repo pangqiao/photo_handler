@@ -16,6 +16,7 @@ import tkinter.messagebox
 import platform
 import os
 import time
+import shutil
 
 class dir_format():
     MONTH_DAY = 1.0       #20201030
@@ -90,24 +91,8 @@ class photo_handler(object):
         self.selected = selected
 
     def run(self):
-        self.move_dir_space(self.path)
         self.grep_file(self.path)
-
-    def move_dir_space(self, dir):
-        prev_dir = os.getcwd()
-        os.chdir(dir)
-
-        for root, subdirs, files in os.walk("."):
-            for dir in subdirs:
-                #substitue the space of the directory
-                if dir.find(" ") != -1:
-                    dir_no_space = dir.replace(' ', '_')
-                    new_path = os.path.join(root, dir_no_space)
-
-                    if not (os.path.isdir(new_path)):
-                        os.rename(os.path.join(root, dir) , new_path)
-
-        os.chdir(prev_dir)
+        print("归类完成！\n")
 
     def grep_file(self, dir):
 
@@ -127,10 +112,7 @@ class photo_handler(object):
         os.chdir(root)
         dir = os.getcwd()
 
-        file_no_space = file.replace(' ', '_')
-        os.rename(os.path.join(dir, file) , os.path.join(dir, file_no_space))
-
-        mtime = os.stat(file_no_space).st_mtime
+        mtime = os.stat(file).st_mtime
         mtime = time.strftime('%Y%m%d %H:%M:%S', time.localtime(mtime))
         #print(mtime)  #2020-10-21 20:32:32
 
@@ -148,8 +130,7 @@ class photo_handler(object):
         if not (os.path.isdir(dest_dir)):
             os.mkdir(dest_dir)
 
-        cmd = "copy " +  os.path.join(dir, file) + " " + dest_dir
-        os.system(cmd)
+        shutil.copy(os.path.join(dir, file), dest_dir)
 
         os.chdir(prev_dir)
 
