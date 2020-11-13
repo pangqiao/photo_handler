@@ -79,7 +79,6 @@ class photo_handler(object):
         self.fill = self.cv.create_rectangle(0, 0, 0, self.progress_high, fill = "green")
 
     def Draw_progress(self, total, num):
-        print(total, num)
         n = (self.progress_width / total) * num
         self.cv.coords(self.fill, (0, 0, n, self.progress_high))
         self.root.update()
@@ -160,7 +159,6 @@ class photo_handler(object):
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if __name__ == '__main__':
-    #root = Tk()
     root = tk.Tk()
     root.title("照片分类")
     photo_handler(root)
