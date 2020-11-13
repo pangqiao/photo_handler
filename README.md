@@ -23,8 +23,11 @@
 - First release
 
 2010/11/06 - v1.1
-- Support folder name with space.  
-- support the file name with space.
+- use "shutil" instead of "os.system"
 
 2010/11/08 - v2.0  
 - Add UI.
+
+2010/11/08 - v2.1  
+- Add progress bar.
+
